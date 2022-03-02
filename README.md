@@ -1,8 +1,6 @@
 # SeagalBot
 Discord Bot that spits out Steven Seagal Quotes.
 
-![Steven Seagal](https://en.wikipedia.org/wiki/Steven_Seagal#/media/File:Steven_Seagal_November_2016.jpg)
-
 | Script       | Description
 | ------------ | -----------
 | `yarn lint`  | Runs eslint against the project
