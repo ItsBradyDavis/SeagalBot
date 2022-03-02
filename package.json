@@ -1,6 +1,9 @@
 {
-  "name": "SeagalBot",
+  "name": "seagal-bot",
   "packageManager": "yarn@3.2.0",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "@discordjs/rest": "^0.3.0",
     "discord-api-types": "^0.27.3",

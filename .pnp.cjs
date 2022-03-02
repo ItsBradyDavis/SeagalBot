@@ -17,14 +17,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "SeagalBot",\
+        "name": "seagal-bot",\
         "reference": "workspace:."\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["SeagalBot", ["workspace:."]]\
+      ["seagal-bot", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -134,18 +134,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:17.0.21"]\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["SeagalBot", [\
-        ["workspace:.", {\
-          "packageLocation": "./",\
-          "packageDependencies": [\
-            ["SeagalBot", "workspace:."],\
-            ["@discordjs/rest", "npm:0.3.0"],\
-            ["discord-api-types", "npm:0.27.3"],\
-            ["discord.js", "npm:13.6.0"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["asynckit", [\
@@ -272,6 +260,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "encoding"\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["seagal-bot", [\
+        ["workspace:.", {\
+          "packageLocation": "./",\
+          "packageDependencies": [\
+            ["seagal-bot", "workspace:."],\
+            ["@discordjs/rest", "npm:0.3.0"],\
+            ["discord-api-types", "npm:0.27.3"],\
+            ["discord.js", "npm:13.6.0"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["tr46", [\
