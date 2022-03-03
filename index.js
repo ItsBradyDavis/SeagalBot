@@ -1,5 +1,6 @@
 const { Client, Intents } = require('discord.js');
 const { token } = require('./config.json');
+const { IRL_QUOTE, MOVIE_QUOTE } = require('./src/enums/slash-command-names');
 const { pickRandomMovieQuote } = require('./src/quotes/movie-quotes');
 const { pickRandomIrlQuote } = require('./src/quotes/irl-quotes');
 
@@ -15,11 +16,10 @@ client.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
 
 	const { commandName } = interaction;
-	console.log("got a command!");
 
-	if (commandName === 'real-quote') {
+	if (commandName === IRL_QUOTE) {
 		await interaction.reply(pickRandomIrlQuote());
-	} else if (commandName === 'movie-quote') {
+	} else if (commandName === MOVIE_QUOTE) {
 		await interaction.reply(pickRandomMovieQuote());
 	}
 });

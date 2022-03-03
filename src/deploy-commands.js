@@ -2,10 +2,11 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const { clientId, guildId, token } = require('../config.json');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
+const {IRL_QUOTE, MOVIE_QUOTE} = require('./enums/slash-command-names');
 
 const commands = [
-	new SlashCommandBuilder().setName('real-quote').setDescription('Replies with a real-life Seagal Quote!'),
-	new SlashCommandBuilder().setName('movie-quote').setDescription('Replies with a Seagal Movie Quote')
+	new SlashCommandBuilder().setName(IRL_QUOTE).setDescription('Replies with a real-life Seagal Quote!'),
+	new SlashCommandBuilder().setName(MOVIE_QUOTE).setDescription('Replies with a Seagal Movie Quote')
 ]
 	.map(command => command.toJSON());
 
