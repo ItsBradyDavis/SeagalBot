@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@discordjs/builders", "npm:0.12.0"],\
             ["@discordjs/rest", "npm:0.3.0"],\
             ["discord-api-types", "npm:0.27.3"],\
             ["discord.js", "npm:13.6.0"],\
@@ -46,6 +47,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@discordjs-builders-npm-0.11.0-8bbb083f8b-7a25b59bb5.zip/node_modules/@discordjs/builders/",\
           "packageDependencies": [\
             ["@discordjs/builders", "npm:0.11.0"],\
+            ["@sindresorhus/is", "npm:4.6.0"],\
+            ["discord-api-types", "npm:0.26.1"],\
+            ["ts-mixer", "npm:6.0.0"],\
+            ["tslib", "npm:2.3.1"],\
+            ["zod", "npm:3.13.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.12.0", {\
+          "packageLocation": "./.yarn/cache/@discordjs-builders-npm-0.12.0-301c7f9b92-3c4ef25637.zip/node_modules/@discordjs/builders/",\
+          "packageDependencies": [\
+            ["@discordjs/builders", "npm:0.12.0"],\
             ["@sindresorhus/is", "npm:4.6.0"],\
             ["discord-api-types", "npm:0.26.1"],\
             ["ts-mixer", "npm:6.0.0"],\
@@ -1032,6 +1045,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["seagal-bot", "workspace:."],\
+            ["@discordjs/builders", "npm:0.12.0"],\
             ["@discordjs/rest", "npm:0.3.0"],\
             ["discord-api-types", "npm:0.27.3"],\
             ["discord.js", "npm:13.6.0"],\
