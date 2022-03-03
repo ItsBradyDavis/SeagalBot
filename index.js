@@ -19,7 +19,8 @@ client.on('interactionCreate', async interaction => {
 
 	if (commandName === IRL_QUOTE) {
 		await interaction.reply(pickRandomIrlQuote());
-	} else if (commandName === MOVIE_QUOTE) {
+	}
+	else if (commandName === MOVIE_QUOTE) {
 		await interaction.reply(pickRandomMovieQuote());
 	}
 });

@@ -4,7 +4,8 @@
   "scripts": {
     "start": "node index.js",
     "deploy-commands": "node src/deploy-commands.js",
-    "lint": "eslint . --ext .js"
+    "lint": "eslint . --ext .js",
+	"test": "jest"
   },
   "dependencies": {
     "@discordjs/builders": "^0.12.0",
