@@ -1,3 +1,5 @@
+const {pickRandomFromArray} = require('./pick-random-from-array');
+
 const quotes = [
 	"My people are my people. They love me and I love them. I would not be here without them.",
 	"I am hoping that I can be known as a great writer and actor some day, rather than a sex symbol.",
@@ -15,4 +17,9 @@ const quotes = [
 	"My ancestors were Russian mongols.",
 	"I look at both as one family.",
 	"[Vladimir Putin is] one of the great living world leaders",
+	"Looks like you're buying rounds tonight!",
+	"See how it goes where I want it to? Right there!",
+	"Notice how you're no longer doing this, now you're doing _this_."
 ];
+
+module.exports.pickRandomIrlQuote = () => pickRandomFromArray(quotes);

@@ -1,3 +1,5 @@
+const {pickRandomFromArray} = require('./pick-random-from-array');
+
 const quotes = [
 	"Well I'm sorry to hear that. Because now, **I will snatch every motherfucker birthday**.",
 	"I'd like to make something very clear. I don't have rage. I'm a happy guy. You see this face? This is a happy face. You all would be lucky to be as happy as I am!",
@@ -7,3 +9,8 @@ const quotes = [
 	"*sits*",
 	"You gotta live to talk about old times."
 ];
+
+module.exports.pickRandomMovieQuote = () => pickRandomFromArray(quotes);
+
+
+

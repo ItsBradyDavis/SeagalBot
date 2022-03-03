@@ -4,8 +4,8 @@ const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 
 const commands = [
-	new SlashCommandBuilder().setName('realQuote').setDescription('Replies with a real-life Seagal Quote!'),
-	new SlashCommandBuilder().setName('movieQuote').setDescription('Replies with a Seagal Movie Quote')
+	new SlashCommandBuilder().setName('real-quote').setDescription('Replies with a real-life Seagal Quote!'),
+	new SlashCommandBuilder().setName('movie-quote').setDescription('Replies with a Seagal Movie Quote')
 ]
 	.map(command => command.toJSON());
 
