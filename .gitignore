@@ -114,3 +114,6 @@ dist
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# This gets hidden until it can be obfuscated properly
+config.json
