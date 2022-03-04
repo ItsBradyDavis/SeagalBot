@@ -11,9 +11,9 @@ describe('pick-random-from-array', () => {
 		array = chance.n(chance.string, chance.d6());
 	});
 
-    test('should pick a random element from an array', () => {
-    	const element = pickRandomFromArray(array);
+	test('should pick a random element from an array', () => {
+		const element = pickRandomFromArray(array);
 
-    	expect(array).toContain(element);
-    });
+		expect(array).toContain(element);
+	});
 });

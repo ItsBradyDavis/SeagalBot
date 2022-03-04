@@ -12,7 +12,7 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.on('interactionCreate', async interaction => {
+client.on('interactionCreate', async (interaction) => {
 	if (!interaction.isCommand()) return;
 
 	const { commandName } = interaction;
