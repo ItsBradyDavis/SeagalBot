@@ -3,5 +3,5 @@ const MOVIE_QUOTE = 'movie-quote';
 
 export {
 	IRL_QUOTE,
-	MOVIE_QUOTE
+	MOVIE_QUOTE,
 };
