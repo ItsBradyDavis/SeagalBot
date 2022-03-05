@@ -1,4 +1,4 @@
-const { pickRandomFromArray } = require('./pick-random-from-array');
+import { pickRandomFromArray } from './pick-random-from-array.js';
 
 const quotes = [
 	'My people are my people. They love me and I love them. I would not be here without them.',
@@ -22,4 +22,6 @@ const quotes = [
 	'Notice how you\'re no longer doing this? Now you\'re doing _this_.',
 ];
 
-module.exports.pickRandomIrlQuote = () => pickRandomFromArray(quotes);
+const pickRandomIrlQuote = () => pickRandomFromArray(quotes);
+
+export { pickRandomIrlQuote };

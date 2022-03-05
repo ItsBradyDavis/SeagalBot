@@ -1,6 +1,6 @@
-const Chance = require('chance');
+import Chance from 'chance';
 
-const { pickRandomFromArray } = require('./../../src/quotes/pick-random-from-array');
+import { pickRandomFromArray } from './../../src/quotes/pick-random-from-array.js';
 
 describe('pick-random-from-array', () => {
 	const chance = new Chance();

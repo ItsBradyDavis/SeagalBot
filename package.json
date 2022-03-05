@@ -1,9 +1,10 @@
 {
   "name": "seagal-bot",
+  "type": "module",
   "packageManager": "yarn@3.2.0",
   "scripts": {
     "start": "node index.js",
-    "deploy-commands": "node src/deploy-commands.js",
+    "deploy": "node src/deploy-commands.js",
     "lint": "eslint . --ext .js",
     "test": "jest"
   },
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "@babel/preset-env": "^7.16.11",
     "babel-jest": "^27.5.1",
     "chance": "^1.1.8",

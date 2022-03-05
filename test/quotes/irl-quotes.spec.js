@@ -1,5 +1,5 @@
-const { pickRandomIrlQuote } = require('../../src/quotes/irl-quotes');
-const { pickRandomFromArray } = require('../../src/quotes/pick-random-from-array');
+import { pickRandomIrlQuote } from '../../src/quotes/irl-quotes.js';
+import { pickRandomFromArray } from '../../src/quotes/pick-random-from-array.js';
 
 jest.mock('../../src/quotes/pick-random-from-array');
 

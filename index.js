@@ -1,8 +1,8 @@
-const { Client, Intents } = require('discord.js');
-const { token } = require('./config.json');
-const { IRL_QUOTE, MOVIE_QUOTE } = require('./src/enums/slash-command-names');
-const { pickRandomMovieQuote } = require('./src/quotes/movie-quotes');
-const { pickRandomIrlQuote } = require('./src/quotes/irl-quotes');
+import { Client, Intents } from 'discord.js';
+import { token } from './config.js';
+import { IRL_QUOTE, MOVIE_QUOTE } from './src/enums/slash-command-names.js';
+import { pickRandomMovieQuote } from './src/quotes/movie-quotes.js';
+import { pickRandomIrlQuote } from './src/quotes/irl-quotes.js';
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });

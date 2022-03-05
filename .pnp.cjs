@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@babel/core", "npm:7.17.5"],\
+            ["@babel/plugin-transform-modules-commonjs", "virtual:76789e4092125d87ebbccfac36cee2a3cecad8263b3ba3173b489b3e613dedd00f2613b55b070776555314d9734d035fd997b2f23dab6ef3a55a00d73a61152f#npm:7.16.8"],\
             ["@babel/preset-env", "virtual:76789e4092125d87ebbccfac36cee2a3cecad8263b3ba3173b489b3e613dedd00f2613b55b070776555314d9734d035fd997b2f23dab6ef3a55a00d73a61152f#npm:7.16.11"],\
             ["@discordjs/builders", "npm:0.12.0"],\
             ["@discordjs/rest", "npm:0.3.0"],\
@@ -1814,10 +1815,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:e0a11b725038a038430e78a7081303617b637131da229bd534386fd5712c31682fa1a06f0126d4f1e42ddf79c1e1e53fde3b556d9545023d92c1d5125b5b3af0#npm:7.16.8", {\
-          "packageLocation": "./.yarn/__virtual__/@babel-plugin-transform-modules-commonjs-virtual-f77f905e66/0/cache/@babel-plugin-transform-modules-commonjs-npm-7.16.8-b70dd72ac5-c0ac00f545.zip/node_modules/@babel/plugin-transform-modules-commonjs/",\
+        ["virtual:76789e4092125d87ebbccfac36cee2a3cecad8263b3ba3173b489b3e613dedd00f2613b55b070776555314d9734d035fd997b2f23dab6ef3a55a00d73a61152f#npm:7.16.8", {\
+          "packageLocation": "./.yarn/__virtual__/@babel-plugin-transform-modules-commonjs-virtual-968cd52752/0/cache/@babel-plugin-transform-modules-commonjs-npm-7.16.8-b70dd72ac5-c0ac00f545.zip/node_modules/@babel/plugin-transform-modules-commonjs/",\
           "packageDependencies": [\
-            ["@babel/plugin-transform-modules-commonjs", "virtual:e0a11b725038a038430e78a7081303617b637131da229bd534386fd5712c31682fa1a06f0126d4f1e42ddf79c1e1e53fde3b556d9545023d92c1d5125b5b3af0#npm:7.16.8"],\
+            ["@babel/plugin-transform-modules-commonjs", "virtual:76789e4092125d87ebbccfac36cee2a3cecad8263b3ba3173b489b3e613dedd00f2613b55b070776555314d9734d035fd997b2f23dab6ef3a55a00d73a61152f#npm:7.16.8"],\
             ["@babel/core", "npm:7.17.5"],\
             ["@babel/helper-module-transforms", "npm:7.17.6"],\
             ["@babel/helper-plugin-utils", "npm:7.16.7"],\
@@ -2271,7 +2272,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/plugin-transform-literals", "virtual:e0a11b725038a038430e78a7081303617b637131da229bd534386fd5712c31682fa1a06f0126d4f1e42ddf79c1e1e53fde3b556d9545023d92c1d5125b5b3af0#npm:7.16.7"],\
             ["@babel/plugin-transform-member-expression-literals", "virtual:e0a11b725038a038430e78a7081303617b637131da229bd534386fd5712c31682fa1a06f0126d4f1e42ddf79c1e1e53fde3b556d9545023d92c1d5125b5b3af0#npm:7.16.7"],\
             ["@babel/plugin-transform-modules-amd", "virtual:e0a11b725038a038430e78a7081303617b637131da229bd534386fd5712c31682fa1a06f0126d4f1e42ddf79c1e1e53fde3b556d9545023d92c1d5125b5b3af0#npm:7.16.7"],\
-            ["@babel/plugin-transform-modules-commonjs", "virtual:e0a11b725038a038430e78a7081303617b637131da229bd534386fd5712c31682fa1a06f0126d4f1e42ddf79c1e1e53fde3b556d9545023d92c1d5125b5b3af0#npm:7.16.8"],\
+            ["@babel/plugin-transform-modules-commonjs", "virtual:76789e4092125d87ebbccfac36cee2a3cecad8263b3ba3173b489b3e613dedd00f2613b55b070776555314d9734d035fd997b2f23dab6ef3a55a00d73a61152f#npm:7.16.8"],\
             ["@babel/plugin-transform-modules-systemjs", "virtual:e0a11b725038a038430e78a7081303617b637131da229bd534386fd5712c31682fa1a06f0126d4f1e42ddf79c1e1e53fde3b556d9545023d92c1d5125b5b3af0#npm:7.16.7"],\
             ["@babel/plugin-transform-modules-umd", "virtual:e0a11b725038a038430e78a7081303617b637131da229bd534386fd5712c31682fa1a06f0126d4f1e42ddf79c1e1e53fde3b556d9545023d92c1d5125b5b3af0#npm:7.16.7"],\
             ["@babel/plugin-transform-named-capturing-groups-regex", "virtual:e0a11b725038a038430e78a7081303617b637131da229bd534386fd5712c31682fa1a06f0126d4f1e42ddf79c1e1e53fde3b556d9545023d92c1d5125b5b3af0#npm:7.16.8"],\
@@ -6630,6 +6631,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["seagal-bot", "workspace:."],\
             ["@babel/core", "npm:7.17.5"],\
+            ["@babel/plugin-transform-modules-commonjs", "virtual:76789e4092125d87ebbccfac36cee2a3cecad8263b3ba3173b489b3e613dedd00f2613b55b070776555314d9734d035fd997b2f23dab6ef3a55a00d73a61152f#npm:7.16.8"],\
             ["@babel/preset-env", "virtual:76789e4092125d87ebbccfac36cee2a3cecad8263b3ba3173b489b3e613dedd00f2613b55b070776555314d9734d035fd997b2f23dab6ef3a55a00d73a61152f#npm:7.16.11"],\
             ["@discordjs/builders", "npm:0.12.0"],\
             ["@discordjs/rest", "npm:0.3.0"],\

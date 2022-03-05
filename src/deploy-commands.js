@@ -1,8 +1,8 @@
-const { SlashCommandBuilder } = require('@discordjs/builders');
-const { clientId, guildId, token } = require('../config.json');
-const { REST } = require('@discordjs/rest');
-const { Routes } = require('discord-api-types/v9');
-const { IRL_QUOTE, MOVIE_QUOTE } = require('./enums/slash-command-names');
+import { SlashCommandBuilder } from '@discordjs/builders';
+import { clientId, guildId, token } from '../config.js';
+import { REST } from '@discordjs/rest';
+import { Routes } from 'discord-api-types/v9';
+import { IRL_QUOTE, MOVIE_QUOTE } from './enums/slash-command-names.js';
 
 const commands = [
 	new SlashCommandBuilder().setName(IRL_QUOTE).setDescription('Replies with a real-life Seagal Quote!'),
