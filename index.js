@@ -1,8 +1,6 @@
 import { Client, Intents } from 'discord.js';
 import { token } from './config.js';
-import { IRL_QUOTE, MOVIE_QUOTE } from './src/enums/slash-command-names.js';
-import { pickRandomMovieQuote } from './src/quotes/movie-quotes.js';
-import { pickRandomIrlQuote } from './src/quotes/irl-quotes.js';
+import commandMap from './src/enums/command-map.js';
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
@@ -17,11 +15,10 @@ client.on('interactionCreate', async (interaction) => {
 
 	const { commandName } = interaction;
 
-	if (commandName === IRL_QUOTE) {
-		await interaction.reply(pickRandomIrlQuote());
-	}
-	else if (commandName === MOVIE_QUOTE) {
-		await interaction.reply(pickRandomMovieQuote());
+	const handler = commandMap[commandName].handler;
+
+	if (handler) {
+		await interaction.reply(handler());
 	}
 });
 

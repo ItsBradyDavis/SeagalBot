@@ -4,7 +4,8 @@
 	"packageManager": "yarn@3.2.0",
 	"scripts": {
 		"start": "node index.js",
-		"deploy": "node src/deploy-commands.js",
+		"deploy": "NODE_ENV=production node src/deploy-commands.js",
+		"deploy-dev": "NODE_ENV=development node src/deploy-commands.js",
 		"lint": "eslint . --ext .js",
 		"test": "jest"
 	},
