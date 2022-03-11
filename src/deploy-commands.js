@@ -2,8 +2,11 @@ import { SlashCommandBuilder } from '@discordjs/builders';
 import { REST } from '@discordjs/rest';
 import { Routes } from 'discord-api-types/v9';
 
-import { clientId, guildId, token } from '../config.js';
 import commandMap from './enums/command-map.js';
+
+const clientId = process.env.BOT_CLIENT_ID;
+const guildId = process.env.BOT_GUILD_ID;
+const token = process.env.BOT_TOKEN;
 
 const commands = Object.keys(commandMap).map((key) => (
 	new SlashCommandBuilder().setName(key).setDescription(commandMap[key].description)),
