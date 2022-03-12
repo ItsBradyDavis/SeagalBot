@@ -23,6 +23,9 @@ Set the environment variables for your bot token, client ID, and the guildID you
 | `yarn start` | Starts the default app.js application at port 3000
 | `yarn deploy-dev` | Deploys commands to your guildId
 | `yarn deploy` | Deploys commands globally
+| `yarn docker-container` | Starts a docker container `seagal-bot`
+| `yarn docker-start` | Starts the application on `seagal-bot` docker container
+| `yarn docker-stop` | Stops processes running on `seagal-bot` docker container
 
 
 **Note**: The opinions expressed by Steven Seagal do not reflect that of the author(s) of this repository & vice versa.
