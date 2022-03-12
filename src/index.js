@@ -1,6 +1,5 @@
 import { Client, Intents } from 'discord.js';
-import { token } from './config.js';
-import commandMap from './src/enums/command-map.js';
+import commandMap from './enums/command-map.js';
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
@@ -21,6 +20,8 @@ client.on('interactionCreate', async (interaction) => {
 		await interaction.reply(handler());
 	}
 });
+
+const token = process.env.BOT_TOKEN;
 
 // Login to Discord with your client's token
 client.login(token);

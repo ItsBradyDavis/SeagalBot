@@ -3,7 +3,10 @@
 	"type": "module",
 	"packageManager": "yarn@3.2.0",
 	"scripts": {
-		"start": "node index.js",
+		"start": "node src/index.js",
+		"docker-container": "docker build -t seagal-bot .",
+		"docker-start": "docker run -e BOT_TOKEN -dp 3000:3000 seagal-bot",
+		"docker-stop": "docker ps -q --filter ancestor='seagal-bot' | xargs -r docker stop",
 		"deploy": "NODE_ENV=production node src/deploy-commands.js",
 		"deploy-dev": "NODE_ENV=development node src/deploy-commands.js",
 		"lint": "eslint . --ext .js",
