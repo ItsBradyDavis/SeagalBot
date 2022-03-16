@@ -15,14 +15,20 @@ const commands = Object.keys(commandMap).map((key) => (
 
 const rest = new REST({ version: '9' }).setToken(token);
 
-if (process.env.NODE_ENV === 'development') {
-	rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands })
-		.then(() => console.log('Successfully registered dev application commands.'))
-		.catch(console.error);
-}
-else {
-	rest.put(Routes.applicationCommands(clientId), { body: commands })
-		.then(() => console.log('Successfully registered global application commands.'))
-		.catch(console.error);
-}
+(async () => {
+	try {
+		if (process.env.NODE_ENV === 'development') {
+			await rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands });
 
+			console.log('Successfully registered dev application commands.');
+		}
+		else {
+			await rest.put(Routes.applicationCommands(clientId), { body: commands });
+
+			console.log('Successfully registered global application commands.');
+		}
+	}
+	catch (error) {
+		console.error(error);
+	}
+})();
