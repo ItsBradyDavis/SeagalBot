@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@discordjs/rest", "npm:0.3.0"],\
             ["babel-jest", "virtual:76789e4092125d87ebbccfac36cee2a3cecad8263b3ba3173b489b3e613dedd00f2613b55b070776555314d9734d035fd997b2f23dab6ef3a55a00d73a61152f#npm:27.5.1"],\
             ["chance", "npm:1.1.8"],\
+            ["cross-fetch", "npm:3.1.5"],\
             ["discord-api-types", "npm:0.27.3"],\
             ["discord.js", "npm:13.6.0"],\
             ["eslint", "npm:8.10.0"],\
@@ -3792,6 +3793,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["cross-fetch", [\
+        ["npm:3.1.5", {\
+          "packageLocation": "./.yarn/cache/cross-fetch-npm-3.1.5-e414995db9-f6b8c6ee3e.zip/node_modules/cross-fetch/",\
+          "packageDependencies": [\
+            ["cross-fetch", "npm:3.1.5"],\
+            ["node-fetch", "virtual:44af1b3c8f28effcd07026bdb9319baf5b4ef12c93942c1b5ac3193cb928d2e96b025c22e01881577cd1c5fa477005a8615cda83b698ef8656b7acd3e54dc2fc#npm:2.6.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["cross-spawn", [\
         ["npm:7.0.3", {\
           "packageLocation": "./.yarn/cache/cross-spawn-npm-7.0.3-e4ff3e65b3-671cc7c728.zip/node_modules/cross-spawn/",\
@@ -6637,6 +6648,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@discordjs/rest", "npm:0.3.0"],\
             ["babel-jest", "virtual:76789e4092125d87ebbccfac36cee2a3cecad8263b3ba3173b489b3e613dedd00f2613b55b070776555314d9734d035fd997b2f23dab6ef3a55a00d73a61152f#npm:27.5.1"],\
             ["chance", "npm:1.1.8"],\
+            ["cross-fetch", "npm:3.1.5"],\
             ["discord-api-types", "npm:0.27.3"],\
             ["discord.js", "npm:13.6.0"],\
             ["eslint", "npm:8.10.0"],\
