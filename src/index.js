@@ -17,7 +17,7 @@ client.on('interactionCreate', async (interaction) => {
 	const handler = commandMap[commandName].handler;
 
 	if (handler) {
-		await interaction.reply(handler());
+		await interaction.reply(await handler());
 	}
 });
 
