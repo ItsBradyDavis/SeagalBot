@@ -3,7 +3,7 @@ Discord Bot that spits out Steven Seagal Quotes. Feel free to [add it to your se
 )
 
 
-###Local Development Setup
+### Local Development Setup
 Set the environment variables for your bot token, client ID, and the guildID you want to test on:
 
 
